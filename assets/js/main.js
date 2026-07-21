@@ -67,17 +67,18 @@ document.addEventListener('DOMContentLoaded', () => {
   "status": "Ready for Impact"
 }`,
     'stack': `interface DeveloperProfile {
-  frontend: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Redux'];
-  backend: ['Node.js', 'Express.js', 'REST APIs', 'PostgreSQL', 'Oracle SQL'];
-  architecture: ['Microservices', 'Prisma ORM', 'Session Auth', 'Optimistic UI'];
-  testing: ['Cypress E2E', 'Selenium (Java)'];
+  frontend: ['React.js', 'Redux', 'TypeScript', 'Tailwind CSS', 'TanStack Query'];
+  backend: ['Node.js', 'Express.js', 'REST APIs', 'Swagger OpenAPI', 'Global Error Handler'];
+  database: ['PostgreSQL', 'Supabase', 'Drizzle ORM', 'Prisma ORM', 'Oracle SQL'];
+  architecture: ['Monorepo Workspace', 'End-to-End Type Safety', 'Session Auth'];
+  testing: ['Jest (Frontend & Backend)', 'Cypress E2E', 'Selenium (Java)'];
 }`,
     'impact': `#!/bin/bash
 # High Impact Accomplishments
 echo "--> Save ~3 Days Manual Work per Cycle via Custom Java Automation (TCS)"
 echo "--> Resolved Critical Build/Compilation Failure @ CouponCabin"
 echo "--> Built End-to-End Social Blogging Platform with Session Auth"
-echo "--> Full-Stack E-Commerce Platform with Prisma & Cypress E2E"
+echo "--> Monorepo Jira Clone: Express + Drizzle + Supabase + TanStack Query + Jest"
 echo "--> 100% Cross-Browser Responsive Production React UI"`
   };
 
@@ -141,17 +142,17 @@ echo "--> 100% Cross-Browser Responsive Production React UI"`
       ],
       tags: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL', 'Custom Auth', 'REST APIs', 'Optimistic UI', 'Full CRUD']
     },
-    'ecommerce': {
-      title: 'E-Commerce Web Application (Next.js)',
+    'jira': {
+      title: 'Full-Stack Jira Clone Platform (Monorepo)',
       period: '2025 – Present',
-      subtitle: 'Next.js App Router, Prisma ORM, PostgreSQL, Cypress E2E',
+      subtitle: 'TypeScript Monorepo, React.js, Express.js, Drizzle ORM, Supabase PostgreSQL, TanStack Query, Jest, Swagger',
       highlights: [
-        'Architected full-stack e-commerce experience using Next.js for server components, API routes, and static caching.',
-        'Designed relational data schemas using Prisma ORM with PostgreSQL covering products, cart items, customer orders, and admin controls.',
-        'Implemented multi-role authentication flow securing customer checkout and administrative dashboard.',
-        'Wrote end-to-end automated test suites using Cypress validating login, cart mutations, checkout, and order completion.'
+        'Architected using a scalable Monorepo workspace isolating shared contract types, React frontend client, and Express API server for end-to-end TypeScript type-safety.',
+        'Managed cloud PostgreSQL database on Supabase using type-safe Drizzle ORM with schema validations and automated migration pipelines.',
+        'Integrated TanStack Query (React Query) on the frontend for smart server state synchronization, query caching, and optimistic UI mutations for instant feedback on issue boards.',
+        'Designed robust Express.js backend with centralized global API error middleware, auto-generated Swagger OpenAPI documentation, and comprehensive Jest test suites for both frontend components & backend REST endpoints.'
       ],
-      tags: ['Next.js', 'TypeScript', 'Prisma ORM', 'PostgreSQL', 'Cypress E2E', 'Tailwind CSS', 'Admin Dashboard']
+      tags: ['Monorepo Architecture', 'TypeScript', 'React.js', 'Express.js', 'Drizzle ORM', 'Supabase', 'TanStack Query', 'Jest Testing', 'Swagger API', 'Global Error Handler']
     }
   };
 

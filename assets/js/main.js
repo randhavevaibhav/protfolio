@@ -9,20 +9,24 @@ document.addEventListener('DOMContentLoaded', () => {
   // 1. Mobile Menu Toggle
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
-  const mobileMenuCloseBtn = document.getElementById('mobile-menu-close');
+  const mobileMenuCloseDrawer = document.getElementById('mobile-menu-close');
+ const mobileMenuClosebtn = document.getElementById('mobile-menu-close-btn');
 
   function openMobileMenu() {
     mobileMenu.classList.remove('translate-x-full');
     document.body.classList.add('overflow-hidden');
+    document.documentElement.style.overflow = "hidden";
   }
 
   function closeMobileMenu() {
     mobileMenu.classList.add('translate-x-full');
     document.body.classList.remove('overflow-hidden');
+    document.documentElement.style.overflow = "auto";
   }
 
   if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
-  if (mobileMenuCloseBtn) mobileMenuCloseBtn.addEventListener('click', closeMobileMenu);
+  if (mobileMenuCloseDrawer) mobileMenuCloseDrawer.addEventListener('click', closeMobileMenu);
+   if (mobileMenuClosebtn) mobileMenuClosebtn.addEventListener('click', closeMobileMenu);
 
   // Close mobile menu on clicking any link
   document.querySelectorAll('#mobile-menu a').forEach(link => {
